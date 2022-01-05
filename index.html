@@ -32,8 +32,8 @@
   <a href="#home" class="home"><i class="fa fa-fw fa-home"></i> </a>
   
   <a id="esconder" href="#clients"><i class="fa fa-fw fa-user"></i> </a>
-  <a id="esconder" ><i onclick="listagrid(this)" class="fa fa-th-large"></i> </a>
-  <a><i onclick="acender(this)" class="fa fa-sun-o" style="color:black"></i></a>
+  <a  ><i onclick="listagrid(this)" class="fa fa-th-large" style="color:black"></i></a>
+  <a  ><i onclick="acender(this)" class="fa fa-sun-o" style="color:black"></i></a>
   <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
 </div>
 <div class="content">
@@ -96,17 +96,19 @@ var i;
 
 function listagrid(x) {
 
-  x.classList.toggle("fa-bars");
-  if(x.style.width == "30%")
+  x.classList.toggle("fa-th");
+  if(x.style.color=='black')
   {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.width = "90%";
 	
   }
+   x.style.color='grey';
   }else{
  for (i = 0; i < elements.length; i++) {
     elements[i].style.width = "30%";
   }
+  x.style.color='black';
   }
   }
 
