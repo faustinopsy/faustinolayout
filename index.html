@@ -9,9 +9,10 @@
 <script src="js/funcoes.js"></script>
 
 </head>
-<body>
-
+<body onload="darkmode()">
+<div class="container">
 <div class="left" >
+<img src="img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino
   <a id="esconder" href="#home">Home</a>
   <a id="esconder" href="#news">News</a>
   <a id="esconder" href="#contact">Contact</a>
@@ -28,20 +29,19 @@
 </div>
 
 <div class="right">
+
 <span id="menu"  onclick="openNav()">&#9776</span>
   <a href="#home" class="home"><i class="fa fa-fw fa-home"></i> </a>
   
-  <a id="esconder" href="#clients"><i class="fa fa-fw fa-user"></i> </a>
-  <a  ><i onclick="listagrid(this)" class="fa fa-th-large" style="color:black"></i></a>
+  <a id="search" href="#clients"><i class="fa fa-fw fa-search"></i> </a>
+  <a  ><i onclick="listagrid(this)"  class="fa fa-th-large" style="color:black"></i></a>
   <a  ><i onclick="acender(this)" class="fa fa-sun-o" style="color:black"></i></a>
   <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
 </div>
 <div class="content">
   
-<div id="btnContainer">
-  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
-  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-</div>
+       
+
 <br>
 
 <div class="row">
@@ -74,79 +74,5 @@
   </div>
 </div>
 </div>
-<script>
-function acender(x) {
- var element = document.body;
-   element.classList.toggle("dark-mode");
-  x.classList.toggle("fa-moon-o");
-  if(x.style.color=='black')
-  {
-  x.style.color='grey';
-  }else{
- 
-  x.style.color='black';
-  }
-}
-
-var elements = document.getElementsByClassName("column");
-
-// Declare a loop variable
-var i;
-
-
-function listagrid(x) {
-
-  x.classList.toggle("fa-th");
-  if(x.style.color=='black')
-  {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "90%";
-	
-  }
-   x.style.color='grey';
-  }else{
- for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "30%";
-  }
-  x.style.color='black';
-  }
-  }
-
-
-
-// List ou Grid
-function listView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "90%";
-  }
-}
-
-// Grid View
-function gridView() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "30%";
-  }
-}
-
-/* Optional: Add active class to the current button (highlight it) */
-var container = document.getElementById("btnContainer");
-var btns = container.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-
-
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
+</div>
 </html>
