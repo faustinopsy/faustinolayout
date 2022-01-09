@@ -1,10 +1,78 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: white;
-  color: black;
+  background-color: #16202c;
+  color: white;
   
   margin: 0;
   font-family: "Lato", sans-serif;
+}
+.bg-image {
+  /* The image used */
+  background-image: url("../img/eu.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 150px; 
+  transform: translate(0%, 30%);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  border-radius:3%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.glow {
+ 
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #E6FF33, 0 0 40px #E6FF33, 0 0 50px #E6FF33, 0 0 60px #E6FF33, 0 0 70px #ff4da6, 0 0 80px #E6FF33;
+  }
+}
+
+.glow2 {
+ 
+  color: #444;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #e65573, 0 0 40px #e60073, 0 0 50px #e65573, 0 0 60px #e65573, 0 0 70px #e65573;
+  }
+  to {
+    text-shadow: 0 0 20px #ddd, 0 0 30px #E6FF33, 0 0 40px #E6DD33, 0 0 50px #E6FF33, 0 0 60px #E6DD33, 0 0 70px #DD4da6, 0 0 80px #E6DD33;
+  }
 }
 
 .dark-mode {
@@ -25,20 +93,22 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: black;
+  background-color: #16202c;
   color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
+  box-shadow: 8px 16px 16px 0 rgba(0, 0, 0, 0.8);
 }
 .right {
   right: 0;
   padding: 0;
-  background-color: black;
+  background-color: #16202c;
   color: white;
   position: fixed;
   height: 100%;
   overflow: auto;
+  box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.8);
 }
 
 .left a {
@@ -60,8 +130,8 @@ body {
 
 div.content {
   margin-left: 200px;
-  margin-right: 10%;
-  padding: 27px 17px 7px 7px;
+  margin-right: 3%;
+  padding: 27px 27px 7px 7px;
   height: 100%;
 }
 .right a {
@@ -84,87 +154,9 @@ font-size:30px;
 cursor:pointer;
 display:none;
 }
-@media screen and (max-width: 700px) {
-  .left {
-	  position: fixed;
-    width: 100%;
-   height: 70px;
-    left: 0;
-  top: 0;
-  }
-  .right {
-    width: 100%;
-    height: 40px;
-    left: 0;
-  bottom: 0;
-  width: 100%;
-  }
-  .seta{
-position: fixed;
-bottom: -30px;
-display:block;
-margin-left: 85%;
-}
-.acender{
-position: fixed;
-bottom: -30px;
-display:block;
-margin-left: 75%;
-}
-.avatar{
- width: 30px;
-}
-.home{
-position: fixed;
-bottom: -30px;
-display:block;
-margin-left: 10%;
-}
-#search{
-position: fixed;
-bottom: -30px;
-display:block;
-margin-left: 20%;
-}
 
-#menu{
-	position: fixed;
-font-size:30px;
-cursor:pointer;
-display:block;
-margin-left: 50%;
-background-color: black;
-  color: white;
-}
-  .left a {float: left;}
-  div.content {margin-left: 0;}
-  
-  .left{
-height: 40px;
-}
- #esconder {
 
-  display: none;
-}
-.column{
-	width = "90%";
-}
-.avatar {
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
 
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-  
-}
 .avatar {
   vertical-align: middle;
   width: 30px;
@@ -229,28 +221,24 @@ section.dark{
 }
 
 
-* {
-  box-sizing: border-box;
-}
 
-/* Create two equal columns that floats next to each other */
 .column {
-
-  margin:15px;
-  margin-left:5%;
   float: left;
-  width: 40%;
-  height: 150px;
-  padding: 15px 10px 5px 40px ;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  
 }
+
+
 
 /* Clear floats after the columns */
 .row:after {
+	width: 100%;
   content: "";
   display: table;
   clear: both;
 }
-/* Style the buttons */
 
 .btn {
   border: 2px solid black;
@@ -360,4 +348,80 @@ section.dark{
 
 .closebtn:hover {
   color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .left {
+	  position: fixed;
+    width: 100%;
+   height: 70px;
+    left: 0;
+  top: 0;
+  }
+  .right {
+    width: 100%;
+    height: 40px;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  }
+  .seta{
+position: fixed;
+bottom: -30px;
+display:block;
+margin-left: 85%;
+}
+.acender{
+position: fixed;
+bottom: -30px;
+display:block;
+margin-left: 75%;
+}
+.avatar{
+ width: 30px;
+}
+.home{
+position: fixed;
+bottom: -30px;
+display:block;
+margin-left: 10%;
+}
+#search{
+position: fixed;
+bottom: -30px;
+display:block;
+margin-left: 20%;
+}
+
+#menu{
+	position: fixed;
+font-size:30px;
+cursor:pointer;
+display:block;
+margin-left: 50%;
+
+}
+  .left a {float: left;}
+  div.content {margin-left: 0;}
+  
+  .left{
+height: 40px;
+}
+ #esconder {
+
+  display: none;
+}
+ .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+	margin-left: 30px;
+  }
+.avatar {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 }

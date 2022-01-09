@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/funcoes.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="left" >
+<span  href="#home"><img src="../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
+  <a id="esconder" href="./">Home</a>
+  <a id="esconder" href="#">Sobre mim</a>
+  <a id="esconder" href="#contact">Contato</a>
+</div>
+<div id="myNav" class="overlay">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="./">Home</a>
+    <a href="#">Sobre mim</a>
+    <a href="#">Contato</a>
+    
+  </div>
+</div>
+
+<div class="right">
+
+<span id="menu"  onclick="openNav()">&#9776</span>
+  <a href="/" class="home"><i class="fa fa-fw fa-home"></i> </a>
+  <a id="search"  href="#search" ><i class="fa fa-fw fa-search"></i> </a>
+ 
+  <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
+  <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
+</div>
+
+<div class="content">
+  
+  <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>     
+
+<br>
+ <h1>Sobre mim</h1>
+      <p>
+        Meu nome é Rodrigo Faustino , nasci em Campina Grande/PB e sou
+        Analista de sistema desenvolvedor de software, Professor de Teologia, Hipnólogo e 
+        neste ano de 2022 terminarei a graduação em psicólogia.
+        </p>
+        <h2>Conhecimento</h2>
+      <p>
+         Finalizei o curso de Análise e desenvolvimento de sistemas na Faculdade de 
+         Tecnologia Carlos Drummond de Andrade em são paulo ano de 2010.</p>
+      <p>
+	  Três anos antes já era concurseiro de carteirinha, fazendo em média três concursos por ano, e passei em alguns que não me chamaram por esta longe da classificação e passei em outros dentro da classificação e fui chamado e desde então só tenho exercido cargos públicos.
+	   </p>
+	   <p>Em um dos cargos públicos exerci meus conhecimentos em programação e tenho mais de sete anos de experiência em desenvolvimento de sistemas, onde fui um dos principais responsaável por muitos sistemas no ambito de uma secretária do governo estado de São Paulo.</p>
+      <p>Desde de 2005 estudava Teologia em cursos livres, mas nunca finalizava devido aos alto valores, 
+         só depois em 2013 Finalizei o Bacharel em Teologia.</p>
+		<p>Ministrei diversos cursos de teologia em igrejas, e atualmente ministro aulas de teosofia em uma instituição para conciêntizar quanto a importância de respeito a diversidade de ideias desmistificando origens.</p>
+      <p> Em 2016 fiz os primeiros cursos de hipnose 4 no total, depois seguir pesquisando livros sobre o assunto motivado pela investigação de assuntos relacionados a Teologia e religião, hipnotizei muitas pessoas nas ruas e no inicio até ofreci atendimentos de hipnoterapia.</p> 
+	  <p>Em janeiro de 2018 iniciei a faculdade de Psicologia e no final de 2022 me torno Psicólogo motivado pelo exposto acima, sendo que irei me especializar em Terapia cognitiva compartamental, um ramo dentro da Psicologia Cognitiva.
+      </p>
+
+      <p>
+        Visto o exposto acima, nesse blog você irá encontrar postagens dos três assuntos que
+        gosto e tenho facilidade em falar: Psicologia; Tecnologia; Teologia/Religião e diversos.
+      </p>
+      <p>
+        Uma qualidade que me orgulho, é a minha facilidade em aprender e aplicar o que foi aprendido, 
+        e minha paixão em saber como as coisas funcionam e o porque funcionam.
+      </p>
+
+      <h2>Contato</h2>
+
+      <p>
+        Você pode entrar em contato comigo através de qualquer uma das minhas
+        redes sociais.
+      </p>
+
+
+</div>
+</div>
+</html>

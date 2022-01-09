@@ -4,11 +4,11 @@ function acender(x) {
   x.classList.toggle("fa-moon-o");
   if(x.style.color=='black')
   {
-  x.style.color='grey';
+  //x.style.color='grey';
   localStorage.setItem("dark", "grey");
   }else{
  
-  x.style.color='black';
+  //x.style.color='black';
   localStorage.setItem("dark", "black");
   }
 }

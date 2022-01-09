@@ -13,18 +13,17 @@
 <div class="container">
 <div class="left" >
 <span  href="#home"><img src="../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
-  <a id="esconder" href="#home">Home</a>
-  <a id="esconder" href="#news">News</a>
-  <a id="esconder" href="#contact">Contact</a>
-  <a id="esconder" href="#about">About</a>
+  <a id="esconder" href="#">Home</a>
+  <a id="esconder" href="sobre">Sobre mim</a>
+  <a id="esconder" href="#contact">Contato</a>
 </div>
 <div id="myNav" class="overlay">
   <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="#">Home</a>
-    <a href="#">News</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
+    <a href="sobre">Sobre mim</a>
+    <a href="#">Contato</a>
+    
   </div>
 </div>
 
@@ -32,7 +31,7 @@
 
 <span id="menu"  onclick="openNav()">&#9776</span>
   <a href="#home" class="home"><i class="fa fa-fw fa-home"></i> </a>
-  <a id="search" href="#search"><i class="fa fa-fw fa-search"></i> </a>
+  <a id="search"  href="#search" ><i class="fa fa-fw fa-search"></i> </a>
  
   <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
   <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
@@ -40,26 +39,67 @@
 
 <div class="content">
   
-       
+  <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>     
 
 <br>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <div class="column" >
+    <div class="card">
+      <div class="bg-image">
+	 
+	  </div>
+<div class="bg-text glow">
+  <h2>Psicologia</h2>
+  
+  <p>Assuntos relacionados</p>
+</div>
+
+    </div>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+  <div class="column" >
+    <div class="card">
+      <div class="bg-image">
+	 
+	  </div>
+<div class="bg-text glow">
+  <h2>Tecnologia</h2>
+  
+  <p>Assuntos relacionados</p>
+</div>
+    </div>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
+  <div class="column" >
+    <div class="card">
+      <div class="bg-image">
+	 
+	  </div>
+<div class="bg-text glow2">
+  <h2>Teologia</h2>
+  
+  <p>Assuntos relacionados</p>
+</div>
+    </div>
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
+  <div class="column" >
+    <div class="card">
+       <div class="bg-image">
+	 
+	  </div>
+<div class="bg-text glow2">
+  <h2>Diversos</h2>
+  
+  <p>Assuntos relacionados</p>
+</div>
+    </div>
   </div>
 </div>
 
