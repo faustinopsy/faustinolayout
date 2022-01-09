@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/funcoes.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="left" >
+<span  href="#home"><img src="../../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
+  <a id="esconder" href="../index">Home</a>
+  <a id="esconder" href="../sobre">Sobre mim</a>
+  <a id="esconder" href="../contato">Contato</a>
+</div>
+<div id="myNav" class="overlay">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="../">Home</a>
+    <a href="../sobre">Sobre mim</a>
+    <a href="../contato">Contato</a>
+    
+  </div>
+</div>
+
+<div class="right">
+
+<span id="menu"  onclick="openNav()">&#9776</span>
+  <a href="../" class="home"><i class="fa fa-fw fa-home"></i> </a>
+  <a id="search"  href="../procurar"><i class="fa fa-fw fa-search"></i> </a>
+ 
+  <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
+  <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
+</div>
+
+<div class="content" id="content">
+  
+  <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>     
+
+<br> <b id="tempo"></b><br>
+  <h3>Origem</h3>
+  <p>O budismo é uma religião indiana baseada nos ensinamentos de Sidarta Gautama, conhecido como o Buda. De caráter filosófico e não teísta, surgiu na Índia Antiga como uma tradição ascética entre os séculos VI e IV a.C. Atualmente é a quarta maior religião do mundo, com mais de 520 milhões de seguidores (cerca de 7% a 8% da população global),[4] conhecidos como budistas. No Brasil, segundo o censo de 2010, residem aproximadamente 245 mil budistas.[5][6] Em Portugal, há cerca de 64 mil budistas. O budismo abrange diversas tradições, crenças e práticas espirituais baseadas nos ensinamentos do Buda e em suas interpretações. Os dois maiores ramos do budismo são o theravāda ("Escola dos Anciões" em páli) e o mahāyāna ("O Grande Veículo" em sânscrito).
+
+Como expresso nas Quatro Nobres Verdades do Buda, a meta do budismo é a superação do sofrimento (dukkha) causado pelo desejo e pela ignorância em relação à verdadeira natureza da realidade, formada pela impermanência e pela inexistência da alma dos seres vivos. A maioria das tradições budistas se concentram na superação do eu individual através da conquista do nirvana ou da busca do caminho de Buda, o que leva ao fim do ciclo de morte e renascimento.
+</p><p>
+De acordo com a narrativa convencional, o Buda nasceu em Lumbini (hoje, patrimônio mundial da Organização das Nações Unidas para a Educação, a Ciência e a Cultura) por volta do ano 566 a.C. e cresceu em Capilvasto: ambos, atuais localidades nepalesas. Logo após o nascimento de Sidarta, um astrólogo visitou o pai do jovem príncipe, Suddhodana, e profetizou que Sidarta ou iria se tornar um grande rei, ou renunciaria ao mundo material para se tornar um homem santo se, porventura, visse a vida fora das paredes do palácio.
+
+O rei Suddhodana estava determinado a ver o seu filho se tornar um rei e, assim, impediu que ele saísse do palácio. Mas, aos 29 anos, apesar dos esforços de seu pai, Sidarta se aventurou por além do palácio diversas vezes. Em uma série de encontros (em locais conhecidos pela cultura budista como "quatro pontos"), ele soube do sofrimento das pessoas comuns, encontrando um homem velho, um outro doente, um cadáver e, finalmente, um asceta sadhu, representando a busca espiritual. Essas experiências levaram Gautama, finalmente, a abandonar a vida material e ir em busca de uma vida espiritual.
+
+Sidarta Gautama estudou sob diferentes mestres e desencantou-se com o resultado alcançado pelo que ensinavam. Chegou a praticar ascese rígida, como jejum prolongado, restrição da respiração, e outras formas de exposição a dor, muito comuns naquele tempo na Índia, e quase morreu ao longo do processo. Mas houve um episódio no qual uma jovem lhe ofereceu comida e ele aceitouː isso marcou sua renúncia a tais práticas. Concluiu que as práticas ascéticas extremas não traziam os resultados que buscava. Deduziu, então, que as práticas eram prejudiciais aos praticantes. Ele abandonou o ascetismo, concentrando-se na meditação anapanasati, através da qual descobriu o que hoje os budistas chamam de "caminho do meio": um caminho que não passa pela luxúria e pelos prazeres sensuais, mas que também não passa pelas práticas de mortificação do corpo. Em outras palavras, o caminho do meio não seria o caminho do apego a qualquer coisa, nem também o caminho da negação ou aversão a qualquer coisa, e sim uma terceira via.
+</p>
+
+  <h3>Crenças</h3>
+  
+  <p><p><font style="font-family: Fabiana, sans-serif; font-size: medium; text-align: justify; vertical-align: inherit;">De acordo com outras interpretações de mestres budistas e eruditos, e recentemente reconhecidas por alguns estudiosos ocidentais não budistas, as "verdades" não representam meras declarações e/ou indicações, entretanto estas podem ser agrupadas em dois grupos:
+
+o sofrimento e as causas do sofrimento;
+a cessação do sofrimento e os caminhos para a libertação.</font></p><ol style="padding: 0em; margin: 0.5em 0em 0.5em 2.5em; font-family: Fabiana, sans-serif; font-size: medium; text-align: justify;"><li style="padding: 0em; margin: 0em;"><font style="vertical-align: inherit;">"A Verdade Nobre Que Está Sofrendo";</font></li><li style="padding: 0em; margin: 0em;"><font style="vertical-align: inherit;">"A Verdade Nobre Que É O Surgimento do Sofrimento";</font></li><li style="padding: 0em; margin: 0em;"><font style="vertical-align: inherit;">"A Verdade Nobre Que É O Fim do Sofrimento";</font></li><li style="padding: 0em; margin: 0em;"><font style="vertical-align: inherit;">"A Verdade Nobre Que Produz o Caminho para o Fim do Sofrimento".</font><font style="vertical-align: inherit;">.</font></li></ol></p> 
+
+  <h3>Variações</h3>
+  <p>A sangha original, após a realização de um concílio no século IV a.C., dividiu-se em duas escolas de pensamento: Mahasanghika e Sthaviravada. Desses dois troncos, a única escola remanescente é a Theravada. Os três veículos principais são: Escolas Antigas, Escolas Mahayana e Escolas Vajrayana</p>
+  <p><b>Escolas Antigas</b></p>
+  <p>Ch'eng-shih, Chu-she, Jôjitsu, Kusha, Lü-tsung, Mahasamghika, Pudgalavada, Ritsu, Sarvastivada, Sautrantika, Sthaviravada, Theravada e Vaibhashika;</p>
+    <p><b>Escolas Mahayana</b></p>
+  <p>Ch'an, Ching-t'u, Chittamatra, Fa-hsiang, Hossô, Hua-yen, Ji-shû, Jnanavada, Jôdo, Jôdo Shin, Kegon, Madhyamaka, Madhyamika, Nichiren, Nieh-p'an, San-lun, Sanron, Tathagatagarbha, Ti-lun, Won, Yogachara, Yün-chi e Zen;</p>
+    <p><b>Escolas Vajrayana</b></p>
+  <p>Nyingma, Gelug, Sakya, Jonang, Kadam, Kagyü, Mi-tsung, Shingon, Tendai e T'ien-t'ai.</p>
+  
+  <h3>Criticas</h3>
+  <p>O budismo tem, como fundamento de sua doutrina, a extinção do desejo. Porém muitos pensadores renomados defendem que tal objetivo é simplesmente impossível e mesmo não desejável, dada a natureza do homem. O filósofo inglês Thomas Hobbes (1588-1679), por exemplo, relacionava a felicidade ao desejo, o qual nunca seria totalmente satisfeito, pois sempre mudaria de um objeto para outro [1]. No mesmo sentido, o filósofo neerlandês Espinoza (1632-1677) afirmou que o desejo é a essência do homem e que negá-lo seria negar a própria condição humana[2]. O filme estadunidense de 2004 "Antes do pôr do sol" (Before sunset), dirigido por Richard Linklater, faz a personagem Celine criticar o budismo, ao afirmar que a falta de desejo preconizada pelo budismo é um sintoma de depressão.</p>
+<script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+      function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+    throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

@@ -97,6 +97,7 @@ body {
   color: white;
   position: fixed;
   height: 100%;
+  z-index: 2;
   overflow: auto;
   box-shadow: 8px 16px 16px 0 rgba(0, 0, 0, 0.8);
 }
@@ -107,6 +108,7 @@ body {
   color: white;
   position: fixed;
   height: 100%;
+  z-index: 2;
   overflow: auto;
   box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.8);
 }
@@ -199,7 +201,8 @@ display:none;
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
+  top: 80px;
+  z-index: 1;
   right: 45px;
   font-size: 60px;
 }
@@ -349,7 +352,67 @@ section.dark{
 .closebtn:hover {
   color: black;
 }
+.searc {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
 
+.searc-content {
+  position: relative;
+  top: 46%;
+  width: 60%;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.searc .searcbtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.searc .closebtn:hover {
+  color: #ccc;
+}
+
+.searc input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.searc input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.searc button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.searc button:hover {
+  background: #bbb;
+}
 @media screen and (max-width: 700px) {
   .left {
 	  position: fixed;

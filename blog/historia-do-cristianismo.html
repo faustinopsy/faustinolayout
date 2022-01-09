@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/funcoes.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="left" >
+<span  href="#home"><img src="../../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
+  <a id="esconder" href="../index">Home</a>
+  <a id="esconder" href="../sobre">Sobre mim</a>
+  <a id="esconder" href="../contato">Contato</a>
+</div>
+<div id="myNav" class="overlay">
+  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="../index">Home</a>
+    <a href="../sobre">Sobre mim</a>
+    <a href="../contato">Contato</a>
+    
+  </div>
+</div>
+
+<div class="right">
+
+<span id="menu"  onclick="openNav()">&#9776</span>
+  <a href="../index" class="home"><i class="fa fa-fw fa-home"></i> </a>
+  <a id="search"  href="../procurar"><i class="fa fa-fw fa-search"></i> </a>
+ 
+  <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
+  <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
+</div>
+
+<div class="content" id="content">
+  
+  <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+  <div class="overlay-content">
+    <form action="action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>     
+
+<br> <b id="tempo"></b><br> 
+  <h3>Origem</h3>
+  <p>Cristianismo (do grego Xριστός, "Christós", messias, ungido, do heb. משיח "Mashiach") é uma religião abraâmica monoteísta centrada na vida e nos ensinamentos de Jesus de Nazaré, tais como são apresentados no Novo Testamento. A fé cristã acredita essencialmente em Jesus como o Cristo, Filho de Deus, Salvador e Senhor. A religião cristã tem três vertentes principais: o Catolicismo Romano (subordinado ao bispo romano), a Ortodoxia Oriental (se dividiu da Igreja Católica em 1054 após o Grande Cisma) e o Protestantismo (que surgiu durante a Reforma do século XVI). O protestantismo é dividido em grupos menores chamados de denominações. Os cristãos acreditam que Jesus Cristo é o Filho de Deus que se tornou homem e o Salvador da humanidade, morrendo pelos pecados do mundo. Geralmente, os cristãos se referem a Jesus como o Cristo ou o Messias.
+</p><p>
+Os seguidores do cristianismo, conhecidos como cristãos, acreditam que Jesus seja o Messias profetizado na Bíblia Hebraica (a parte das escrituras comum tanto ao cristianismo quanto ao judaísmo). A teologia cristã ortodoxa alega que Jesus teria sofrido, morrido e ressuscitado para abrir o caminho para o céu aos humanos; Os cristãos acreditam que Jesus teria ascendido aos céus, e a maior parte das denominações ensina que Jesus irá retornar para julgar todos os seres humanos, vivos e mortos, e conceder a imortalidade aos seus seguidores. Jesus também é considerado para os cristãos como modelo de uma vida virtuosa, e tanto como o revelador quanto a encarnação de Deus. Os cristãos chamam a mensagem de Jesus Cristo de Evangelho ("Boas Novas"), e por isto referem-se aos primeiros relatos de seu ministério como evangelhos.
+</p><p>
+O cristianismo se iniciou como uma seita judaica e, como tal, da mesma maneira que o próprio judaísmo ou o islamismo, é classificada como uma religião abraâmica.Após se originar no Mediterrâneo Oriental, rapidamente se expandiu em abrangência e influência, ao longo de poucas décadas; no século IV já havia se tornado a religião dominante no Império Romano. Durante a Idade Média a maior parte da Europa foi cristianizada, e os cristãos também seguiram sendo uma significante minoria religiosa no Oriente Médio, Norte da África e em partes da Índia. Depois da Era das Descobertas, através de trabalho missionário e da colonização, o cristianismo se espalhou para a América e pelo resto do mundo.
+</p>
+
+
+
+  <h3>Variações</h3>
+  <p>Desde o princiio do cristianismo a divisão foi sempre um marco central dessa religião.</p>
+  <p><b>Concilio de jerusalém</b></p>
+  <p>A primeira divisão se deu pela questão da circuncisão e costumes alimentares, houve o concilio de jerusalém, onde foi decidido que Paulo iria aos gentios e Pedro, Tiago e João continuaria pregando aos judeus.</p>
+    <p><b>Oriente contra Ocidente</b></p>
+  <p>Houve a grade divisão da Igreja Oriental e Ocidental, por conta da questão do Bispo de roma da igreja ocidental ter maior autoridade que os do Oriente, essa foi uma grande roptura no cristianismo, mas nada como a roptura da reforma protestante.</p>
+    <p><b>Reforma Protestante</b></p>
+  <p>Reforma (alternativamente chamada de Reforma Protestante ou Reforma Europeia) foi um movimento importante dentro do cristianismo ocidental na Europa do século XVI que representou um desafio religioso e político para a Igreja Católica e em particular para a autoridade papal, decorrente do que eram percebidos como erros, abusos e discrepâncias cometidos pela Igreja. A Reforma foi o início do protestantismo, além de ser considerada um dos eventos históricos que marcam o fim da Idade Média e o início do período moderno na Europa.</p>
+  <p><b>Denominações contra Denominações</b></p>
+  <p>Hoje dentro do protestantismo há muitas denominações e cada uma delas se percebe como a única verdadeira, algumas acusam veemente outras de serem hereges ou prostitutas que levam seus membros para o inferno, cada uma divergem da outra por questões dogmaticas ou doutrinarias, algumas por conta de usos e costumes, e outras por interpretações erroneas da bíblia.</p>
+
+  <h3>Criticas</h3>
+  <p>As críticas ao cristianismo e aos cristãos remontam à Era Apostólica, com o Novo Testamento registrando atritos entre os seguidores de Jesus e os fariseus e escribas (por exemplo, Mateus 15: 1-20 e Marcos 7: 1-23). No século II, o cristianismo foi criticado pelos judeus por vários motivos, por ex. que as profecias da Bíblia Hebraica não poderiam ter sido cumpridas por Jesus, visto que ele não teve uma vida de sucesso. Além disso, um sacrifício para remover pecados antecipadamente, para todos ou como um ser humano, não se encaixava no ritual de sacrifício judaico; além disso, diz-se que Deus julga as pessoas por seus atos e não por suas crenças. Um dos primeiros ataques abrangentes ao cristianismo veio do filósofo grego Celso, que escreveu A Verdadeira Palavra, uma polêmica criticando os cristãos como membros não lucrativos da sociedade. Em resposta, o padre gegro Orígenes publicou seu tratado Contra Celsum, uma obra seminal da apologética cristã, que sistematicamente abordou as críticas de Celso e ajudou a trazer ao cristianismo um nível de respeitabilidade acadêmica.
+</p><p>
+No século III, as críticas ao cristianismo aumentaram. Rumores selvagens sobre os cristãos foram amplamente divulgados, alegando que eles eram ateus e que, como parte de seus rituais, devoravam crianças e se engajavam em orgias incestuosas. O filósofo neoplatonista Porfírio escreveu o Adversus Christianos, de quinze volumes, como um ataque abrangente ao cristianismo, em parte com base nos ensinamentos de Plotino.
+</p><p>
+Por volta do século XII, a Mishné Torá (por Maimônides) estava criticando o cristianismo com base na adoração de ídolos, em que os cristãos atribuíam divindade a Jesus, que tinha um corpo físico. No século XIX, Nietzsche começou a escrever uma série de polêmicas sobre os ensinamentos "não naturais" do cristianismo (por exemplo, abstinência sexual), e continuou sua crítica ao cristianismo até o fim de sua vida. No século XX, o filósofo Bertrand Russell expressou sua crítica ao cristianismo em Why I Am Not a Christian, formulando sua rejeição do cristianismo no cenário de argumentos lógicos.
+</p><p>
+A crítica ao cristianismo continua até hoje, por exemplo, teólogos judeus e muçulmanos criticam a doutrina da Trindade sustentada pela maioria dos cristãos, afirmando que esta doutrina em vigor assume que existem três deuses, indo contra o princípio básico do monoteísmo. O erudito do Novo Testamento, Robert M. Price, esboçou a possibilidade de que algumas histórias da Bíblia sejam baseadas parcialmente em mitos.</p>
+<script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+      function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+    throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

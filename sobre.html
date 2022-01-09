@@ -10,34 +10,15 @@
 
 </head>
 <body>
-<div class="container">
-<div class="left" >
-<span  href="#home"><img src="../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
-  <a id="esconder" href="./">Home</a>
-  <a id="esconder" href="#">Sobre mim</a>
-  <a id="esconder" href="#contact">Contato</a>
-</div>
-<div id="myNav" class="overlay">
-  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="./">Home</a>
-    <a href="#">Sobre mim</a>
-    <a href="#">Contato</a>
-    
-  </div>
-</div>
 
-<div class="right">
-
-<span id="menu"  onclick="openNav()">&#9776</span>
-  <a href="./" class="home"><i class="fa fa-fw fa-home"></i> </a>
-  <a id="search"  href="#search" ><i class="fa fa-fw fa-search"></i> </a>
- 
-  <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
-  <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
-</div>
+ <div w3-include-html="include/content.html"></div> 
 
 <div class="content">
+  
+
+<script>
+includeHTML();
+</script>
   
   <div id="myOverlay" class="overlay">
   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
@@ -86,7 +67,19 @@
         Você pode entrar em contato comigo através de qualquer uma das minhas
         redes sociais.
       </p>
-
+<footer class="w3-content w3-padding-44 w3-center " style="background-color:white; font-size:25px;">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2533210P5" target="_blank"><i class="fa fa-user w3-hover-opacity"></i></a>&nbsp;&nbsp;
+    <a href="https://www.facebook.com/faustinopsy" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>&nbsp;&nbsp;
+   <a href="https://www.instagram.com/faustinopsy/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>&nbsp;&nbsp;
+    <a href="https://youtube.com/faustinopsy" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>&nbsp;&nbsp;
+   <a href="https://twitter.com/faustinopsy" target="_blank"> <i class="fa fa-twitter w3-hover-opacity"></i></a>&nbsp;&nbsp;
+   <a href="https://www.linkedin.com/in/faustinopsy/" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>&nbsp;&nbsp;
+   
+   
+  <!-- End footer -->
+  </footer>
+  <br><br>
 
 </div>
 </div>
