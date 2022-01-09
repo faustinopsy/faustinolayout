@@ -10,44 +10,15 @@
 
 </head>
 <body>
-<div class="container">
-<div class="left" >
-<span  href="#home"><img src="../../img/img_avatar.png" alt="Avatar" class="avatar"> Rodrigo Faustino</span>
-  <a id="esconder" href="../index">Home</a>
-  <a id="esconder" href="../sobre">Sobre mim</a>
-  <a id="esconder" href="../contato">Contato</a>
-</div>
-<div id="myNav" class="overlay">
-  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="../">Home</a>
-    <a href="../sobre">Sobre mim</a>
-    <a href="../contato">Contato</a>
-    
-  </div>
-</div>
+<div w3-include-html="../include/contentblog.html"></div> 
 
-<div class="right">
 
-<span id="menu"  onclick="openNav()">&#9776</span>
-  <a href="../" class="home"><i class="fa fa-fw fa-home"></i> </a>
-  <a id="search"  href="../procurar"><i class="fa fa-fw fa-search"></i> </a>
- 
-  <a  class="acender"><i onclick="acender(this)" class="fa fa-sun-o" ></i></a>
-  <a  href="#" class="seta"><i class="fa fa-fw fa-arrow-up"></i> </a>
-</div>
+<script>
+includeHTML();
+</script>
 
 <div class="content" id="content">
   
-  <div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
-  <div class="overlay-content">
-    <form action="action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>     
 
 <br> <b id="tempo"></b><br>
   <h3>Origem</h3>
