@@ -29,12 +29,12 @@ function listagrid(x) {
 	
   }
   localStorage.setItem("cor", "grey");
-   x.style.color='grey';
+   //x.style.color='grey';
   }else{
  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "30%";
+    elements[i].style.width = "25%";
   }
-  x.style.color='black';
+  //x.style.color='black';
   localStorage.setItem("cor", "black");
   }
   }
@@ -65,6 +65,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
+
 }
 
 function darkmode(){
