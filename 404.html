@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/stylo.css">
+<script class="jsbin" src="js/jquery.js"></script>
+<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="flip-card" ><h3>aa página que buscou não existe, aproveite para entrar em contato</h3>
+<a href='../index.html' > >> Voltar para o inicio <<</a>
+  <div class="flip-card-inner" id="cardx" onclick="flip(event)" ondblclick="flip2(event)">
+    <div class="flip-card-front">
+      
+	<div class="card">
+  <img src="img/eu.jpg" alt="Rodrigo" class="imgx" style="width:67%">
+  <h2 class="font-effect-fire">Rodrigo Faustino</h2>
+  <p class="title">Analista, Hipnólogo, Teólogo</p>
+  <p>Psicólogo em formação</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.instagram.com/faustinopsy/"><i class="fa fa-instagram"></i></a> &nbsp;
+    <a href="https://twitter.com/faustinopsy"><i class="fa fa-twitter"></i></a>  &nbsp;
+    <a href="https://www.linkedin.com/in/faustinopsy/"><i class="fa fa-linkedin"></i></a>  &nbsp;
+	<a href="https://github.com/faustinopsy/"><i class="fa fa-github"></i></a> &nbsp;
+    <a href="https://www.facebook.com/faustinopsy/"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button >Contato</button></p> 
+ 
+</div>
+  
+    </div>
+
+    <div class="flip-card-back">
+     <div class="card2">
+  <form method="post" onsubmit="return postTese2();">
+      <p><b style="color:black">Dois cliques para virar</b></p>
+      <p></p>
+  <h4>Contato</h4>
+  <p><input type="text" placeholder="Seu Nome" required name="nomeremetente"></p>
+ <p><input type="email" placeholder="Seu Email" required name="emailremetente"></p>
+  <p><input type="text" placeholder="Assunto" required name="assunto"></p>
+	 <p></p>
+	<p><input style="height:105px" placeholder="Sua Mensagem" required name="mensagem"></p>
+  
+  <p><button type="submit">Enviar</button></p>
+ 
+  </div>
+  </form>
+</div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('.close').click(function () {
+           $('.valida').remove();
+           $('.abrir').slideToggle();
+       });
+    });
+    function postTese2() {
+        var campo1 = $('input[name="nomeremetente"]').val();
+        var campo2 = $('input[name="emailremetente"]').val();
+        var campo3 = $('input[name="assunto"]').val();
+        var campo4 = $('input[name="mensagem"]').val();
+        $.ajax({
+            data: {nomeremetente: campo1, emailremetente: campo2, assunto: campo3, mensagem: campo4},
+            url: 'envia.php',
+            dataType: 'html',
+            type: 'POST',
+            beforeSend: function () {
+                $('.mostrapost').html("<div class=\"Enviar\"></div>");
+                $('.abrir').slideToggle();
+            },
+            success: function (data) {
+                $('.mostrapost').html(data);
+             $('input[name="nomeremetente"]').val('');
+        $('input[name="emailremetente"]').val('');
+        $('input[name="assunto"]').val('');
+         $('input[name="mensagem"]').val('');
+            }
+        });
+        return false;
+    }
+</script>
+ <div class="abrir" style="display:none; font-size: 2em; ">
+    
+    <div class="mostrapost"></div>
+</div>
+<script id="jsbin-javascript">
+
+
+function flip(event){
+	var element = event.currentTarget;
+	if (element.className === "flip-card-inner") {
+    if(element.style.transform == "rotateY(00deg)") {
+      element.style.transform = "rotateY(0deg)";
+    }
+    else {
+      element.style.transform = "rotateY(180deg)";
+	
+    }
+  }
+};
+function flip2(event){
+	var element = event.currentTarget;
+	if (element.className === "flip-card-inner") {
+    if(element.style.transform == "rotateY(180deg)") {
+      element.style.transform = "rotateY(0deg)";
+    }
+    else {
+      element.style.transform = "rotateY(180deg)";
+	
+    }
+  }
+};
+</script>
+
+
+    
+  </div>

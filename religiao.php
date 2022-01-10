@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
-<script src="js/jquery-3.5.1.min.js"></script>
+
 <script src="js/funcoes.js"></script>
 
 </head>

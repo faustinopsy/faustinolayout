@@ -43,37 +43,11 @@ body {
  
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #E6FF33, 0 0 40px #E6FF33, 0 0 50px #E6FF33, 0 0 60px #E6FF33, 0 0 70px #ff4da6, 0 0 80px #E6FF33;
-  }
-}
 
-.glow2 {
- 
-  color: #444;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 
-@-webkit-keyframes glow2 {
-  from {
-    text-shadow: 0 0 10px #ddd, 0 0 20px #ddd, 0 0 30px #e65573, 0 0 40px #e60073, 0 0 50px #e65573, 0 0 60px #e65573, 0 0 70px #e65573;
-  }
-  to {
-    text-shadow: 0 0 20px #ddd, 0 0 30px #E6FF33, 0 0 40px #E6DD33, 0 0 50px #E6FF33, 0 0 60px #E6DD33, 0 0 70px #DD4da6, 0 0 80px #E6DD33;
-  }
-}
 
 .dark-mode {
   background-color: black;
@@ -445,9 +419,10 @@ margin-left: 75%;
 }
 .home{
 position: fixed;
+width: 70px;
 bottom: -30px;
 display:block;
-margin-left: 10%;
+margin-left: 5%;
 }
 #search{
 position: fixed;
