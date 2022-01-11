@@ -1,0 +1,21 @@
+{
+  "name": "rodrigofaustino.com.br",
+  "short_name": "Rodrigo Faustino",
+  "theme_color": "#00a86b",
+  "background_color": "#e5ff53",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "lang": "pt-BR",
+  "orientation": "any",
+  "prefer_related_applications": false,
+    "fcm_sender_id": "952219745992",
+  "icons": [
+    {
+      "src": "img/eu.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+  
+}
