@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/funcoes.js"></script>
+
+</head>
+<body>
+<div w3-include-html="../include/contentblog.html"></div> 
+
+
+<script>
+includeHTML();
+</script>
+
+<div class="content" id="content">
+<br> <b id="tempo"></b><br>
+
+
+<h3>A história das línguas</h3>
+<p></p>
+Uma linguagem é um sistema estruturado de comunicação.
+</p><p>
+O tipo de comunicação que envolve o uso de palavras.
+</p><p>
+<li>Ser capaz de entender um idioma</li>
+<li>Ser capaz de entender os números</li>
+<li>Ser capaz de entender o pensamento abstrato</li>
+
+<h3>O que é uma Linguagem?</h3>
+</p><p>
+Macacos e baleias se comunicam.
+</p><p>
+Aves e abelhas se comunicam.
+</p><p>
+Mas apenas os humanos desenvolveram uma linguagem real.
+</p><p>
+Nenhuma outra espécie pode expressar ideias usando frases construídas por um conjunto de palavras (com verbos e substantivos).
+</p><p>
+Essa habilidade é notável. E o que é ainda mais notável: até as crianças dominam essa habilidade.
+</p><p>
+
+<h3>Línguas faladas</h3>
+</p><p>
+Não temos certeza de quantos anos a língua falada é. O tema é difícil de estudar devido à falta de evidências.
+</p><p>
+Não sabemos como começou. Mas temos uma pista.
+</p><p>
+Os grandes macacos africanos, Pan e Gorilla, são nossos parentes vivos mais próximos. Por que eles são chamados de "Macacos"? Porque eles macaco. Os macacos fazem mímica para transmitir sua mensagem.
+</p><p>
+Supõe-se que a evolução das línguas deve ter sido um longo processo. Nossos ancestrais podem ter começado a falar um milhão de anos atrás, mas com menos palavras, mais mímica e nenhuma gramática.
+</p><p>
+Ter uma língua é provavelmente uma característica chave que nos distingue dos animais.
+
+<h3>Desenvolvimento cognitivo</h3>
+</p><p>
+De acordo com Hauser, Chomsky e Fitch (2002) , existem seis aspectos do desenvolvimento da linguagem:
+
+<li>Teoria da mente</li>
+<li>Entendendo os Sinais Vocais</li>
+<li>Entendendo a Imitação</li>
+<li>Entendendo os Números</li>
+<li>Entendendo a Comunicação Intencional</li>
+<li>Compreendendo Representações Não Linguísticas</li>
+</p><p>
+<h3>Línguas humanas</h3>
+As linguagens humanas contêm um conjunto limitado de palavras reunidas em frases :
+</p><p>
+<h3>Idiomas do computador</h3>
+Os computadores são programados com um conjunto limitado de palavras reunidas em instruções de computador :
+</p><p>
+<h3>Idiomas escritos</h3>
+Egípcio e sumério são as primeiras línguas escritas conhecidas.
+</p><p>
+(A língua escrita mais antiga em uso hoje é o chinês)
+</p><p>
+3500 EAC	sumério</p><p>
+3000 EAC	egípcio</p><p>
+1500 EAC	chinês</p><p>
+1500 EAC	Sânscrito védico</p><p>
+1500 EAC	grego</p><p>
+1000 EAC	hebraico</p><p>
+900 EAC	aramaico</p><p>
+700 EAC	etrusco</p><p>
+500 EAC	tâmil</p><p>
+700 EAC	latim</p><p>
+700 EAC	Sânscrito clássico</p><p>
+500 EAC	árabe</p><p>
+400 EAC	Gótico (alemão)</p><p>
+700 EAC	inglês</p><p>
+700 EAC	japonês</p><p>
+800 EAC	francês</p><p>
+900 EAC	italiano</p><p>
+1000 EAC	espanhol</p><p>
+
+<br>
+<br>
+<br>
+<br>
+  <script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+   
+   function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+  throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

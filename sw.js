@@ -11,7 +11,7 @@ self.addEventListener('fetch', event => {
   );
 });
 
-const CACHE_NAME = 'v1';
+const CACHE_NAME = 'v2';
 const STATIC_CACHE_URLS = ['/', 'index.html',
  'sobre.html', 
  'include/content.html',
@@ -20,7 +20,17 @@ const STATIC_CACHE_URLS = ['/', 'index.html',
    '404.html',
     'contato.html',
 	 'css/style.css',
-	 'img/eu.jpg'
+	 'img/eu.jpg',
+	 '.htaccess',
+	 'blog/historia-do-cristianismo.html',
+	 'blog/historia-do-budismo.html',
+	 'blog/historia-do-hinduismo.html',
+	 'blog/historia-do-islamismo.html',
+	 'blog/historia-do-judaismo.html',
+	 'blog/o-que-e-hipnose.html',
+	 'blog/memoria-de-curto-prazo.html',
+	 'blog/o-cerebro-muda-com-meditacao.html',
+	 'blog/como-a-memoria-funciona.html'
  
  ];
 

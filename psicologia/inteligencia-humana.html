@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/funcoes.js"></script>
+
+</head>
+<body>
+<div w3-include-html="../include/contentblog.html"></div> 
+
+
+<script>
+includeHTML();
+</script>
+
+<div class="content" id="content">
+<br> <b id="tempo"></b><br>
+
+
+<h3>Inteligência Humana</h3>
+<p></p>
+Cerca de 70.000 anos atrás, algo aconteceu com o cérebro humano.
+</p><p>
+Os humanos começaram a desenvolver "Inteligência Cognitiva":
+</p><p>
+<li>Ser capaz de entender um idioma</li>
+<li>Ser capaz de entender os números</li>
+<li>Ser capaz de entender o pensamento abstrato</li>
+
+<h3>Palavras e números</h3>
+
+Usando palavras, foi um grande passo no desenvolvimento da inteligência humana:
+</p><p>
+"Elefante" é mais informativo do que "Animal Grande".
+</p><p>
+Compreender os números, também foi um grande passo:
+</p><p>
+"5" ou "50" é mais informativo do que "poucos" ou "muitos".
+</p><p>
+
+<h3>línguas</h3>
+</p><p>
+"Há um leão atrás do grande carvalho" é mais informativo do que gritar "Perigo!".
+</p><p>
+Ter uma língua é provavelmente uma característica chave que nos distingue dos animais.
+
+<h3>Pensamento abstrato</h3>
+</p><p>
+Muitos comportamentos cotidianos usam o pensamento abstrato:
+
+<li>Usando conceitos</li>
+<li>Usando teorias</li>
+<li>Usando metáforas</li>
+<li>Usando analogias</li>
+<li>Usando a imaginação</li>
+</p><p>
+<h3>O que é Inteligência?</h3>
+Não existe uma definição comprovada de Inteligência .
+</p><p>
+A inteligência pode ser definida como:
+</p><p>
+<li>Ser capaz de entender o pensamento abstrato</li>
+<li>Ser capaz de entender um idioma</li>
+<li>Ser capaz de entender os números</li>
+</p><p>
+A inteligência pode ser definida como uma coleção de conhecimento:
+</p><p>
+<pre>
+<code>
+✔ "A inteligência poderia ser definida como o processo de obtenção de conhecimento por meios eficientes."
+
+Yampolsky (2013)
+</code>
+</pre>
+</p><p>
+O desafio da IA ​​é entender o que é inteligência e como ela funciona.
+</p><p>
+Qual é a diferença entre conhecimento humano e inteligência artificial?
+</p><p>
+A inteligência pode ser um tipo de algoritmo em nossos cérebros ou em nossos genes.
+
+</p><p>
+
+<h3>O Cérebro Humano é Superior?</h3>
+</p><p>
+Animais, pássaros, insetos ou plantas podem pensar?
+</p><p>
+Os humanos têm cérebros maiores que os animais, com algumas excessões, visto que o cérebro eficiente depende de quanto ele gasta em energia, e cada animal que possui um cérebro tem que haver uma proporção de distribuição de energia.
+</p><p>
+Cães grandes têm cérebros maiores do que cães pequenos. Cães grandes são mais inteligentes?
+</p><p>
+Os pássaros têm cérebros muito pequenos, mas sabem que não devem ter filhos no outono e sabem quando voar para o sul.
+</p><p>
+As abelhas têm cérebros ainda menores, mas sabem como se comunicar sobre onde encontrar o néctar, a escolha da nova moradia, conceitos básicos de matematica e comunicação no reino delas.
+</p><p>
+As plantas não têm cérebro como o nosso, mas sabem como se reproduzir e como se preparar para o inverno.
+</p><p>
+
+
+<br>
+<br>
+<br>
+<br>
+  <script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+   
+   function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+  throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

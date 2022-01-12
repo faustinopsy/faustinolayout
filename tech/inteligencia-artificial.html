@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/funcoes.js"></script>
+
+</head>
+<body>
+<div w3-include-html="../include/contentblog.html"></div> 
+
+
+<script>
+includeHTML();
+</script>
+
+<div class="content" id="content">
+<br> <b id="tempo"></b><br>
+
+<p>
+ <h3>Inteligência artificial</h3>
+</p><p>Inteligência artificial
+é um contraste com
+
+<p>Inteligência Humana</p>
+</p><p>
+ <h3>O que é Inteligência Artificial? </h3>
+ </p><p>
+A Inteligência Artificial sugere que as máquinas podem imitar os humanos em:
+</p><p>
+<li>Conversando</li>
+<li>Pensando</li>
+<li>Aprendendo</li>
+<li>Planejamento</li>
+<li>Compreensão</li>
+</p><p>
+A Inteligência Artificial também é chamada de Inteligência de Máquina e Inteligência de Computador.
+</p><p>
+<h3>Nossa definição:</h3>
+</p><p>
+A inteligência artificial é um sistema que pode resolver um problema de forma otimizada. Isso significa que o sistema pode descobrir sozinho qual é a melhor ação a ser tomada.
+</p><p>
+<h3>Wikipédia:</h3>
+</p><p>
+A IA é a inteligência demonstrada por máquinas, ao contrário da inteligência natural exibida por humanos e animais, que envolve consciência e emotividade.
+</p><p>
+<h3>Investopédia:</h3>
+</p><p>
+A IA refere-se à simulação da inteligência humana em máquinas programadas para pensar como humanos e imitar suas ações.
+</p><p>
+<h3>Britannica:</h3>
+</p><p>
+A IA é a capacidade de um computador digital ou robô controlado por computador de realizar tarefas comumente associadas a seres inteligentes. O termo é frequentemente aplicado ao projeto de desenvolvimento de sistemas dotados dos processos intelectuais característicos dos humanos, como a capacidade de raciocinar, descobrir significados, generalizar ou aprender com experiências passadas.
+</p><p>
+<h3>Perguntas interessantes</h3>
+</p><p>
+Estudar a IA levanta muitas questões interessantes:
+</p><p>
+"Os computadores podem pensar como humanos?"
+</p><p>
+"Os computadores podem ser mais inteligentes que os humanos?"
+</p><p>
+"Os computadores podem dominar o mundo?"
+</p><p>
+Máquinas podem entender comandos verbais, reconhecer rostos, dirigir carros e jogar melhor do que nós.
+</p><p>
+Quanto tempo levará antes que eles andem entre nós?
+</p><p>
+<h3>Por que IA agora?</h3>
+</p><p>
+Um dos maiores inovadores no campo do aprendizado de máquina foi John McCarthy , amplamente reconhecido como o "Pai da Inteligência Artificial".
+</p><p>
+Em meados da década de 1950, McCarthy cunhou o termo "Inteligência Artificial" e o definiu como " a ciência de fazer máquinas inteligentes ".
+</p><p>
+Os algoritmos estão aqui desde então. Por que a IA é mais interessante agora?
+</p><p>
+<h3>A resposta é:</h3>
+</p><p>
+O poder de computação não foi forte o suficiente
+O armazenamento do computador não foi grande o suficiente
+Big data não está disponível
+Internet rápida não está disponível
+Outra força forte são os grandes investimentos de grandes empresas (Google, Microsoft, Facebook, YouTube), porque seus conjuntos de dados se tornaram grandes demais para serem manuseados tradicionalmente.
+</p><p>
+Fórmula de decisão inteligente</p><p>
+Salve o resultado de todas as ações</p><p>
+Simule todos os resultados possíveis</p><p>
+Compare a nova ação com as antigas</p><p>
+Verifique se a nova ação é boa ou ruim</p><p>
+Escolha a nova ação se for menos ruim</p><p>
+Faça tudo de novo</p><p>
+O fato de que os computadores podem fazer isso milhões de vezes provou que os computadores podem tomar decisões muito inteligentes.
+</p><p>
+<h3>Filmes de IA</h3>
+</p><p>
+<li>1927-Metrópole</li>
+<li>1968-2001 Uma Odisseia no Espaço</li>
+<li>1973-Westworld (filme)</li>
+<li>1977-Semente Demônio</li>
+<li>1982-Blade Runner</li>
+<li>1984-O Exterminador</li>
+<li>1986-Curto circuito</li>
+<li>1999-Homem Bicentenário</li>
+<li>1999-O Matrix</li>
+<li>2001-AI (Spielberg)</li>
+<li>2010-Eu, Robô</li>
+<li>2013-Dela</li>
+<li>2014-Ex Machina</li>
+<li>2016-Westworld (série HBO)</li>
+</p><p>
+
+  <script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+   
+   function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+  throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

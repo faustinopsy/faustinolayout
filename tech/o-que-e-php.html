@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/funcoes.js"></script>
+
+
+</head>
+<body>
+<div w3-include-html="../include/contentblog.html"></div> 
+
+
+<script>
+includeHTML();
+</script>
+
+<div class="content" id="content">
+<br> <b id="tempo"></b><br>
+<h3>O que é PHP?</h3>
+PHP é uma linguagem de script de servidor e uma ferramenta poderosa para criar páginas da Web dinâmicas e interativas.
+</p><p>
+PHP é uma alternativa amplamente utilizada, gratuita e eficiente para concorrentes como o ASP da Microsoft.
+</p><p>
+O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.
+</p><p>
+
+Ótimo, mas o que isso significa? Por exemplo:
+</p><p>
+<pre><code>
+< ?php
+  echo "Olá, eu sou um script PHP!";
+? >  
+</code></pre>
+   
+
+</p><p>
+O que distingue o PHP de algo como o JavaScript no lado do cliente é que o código é executado no servidor, gerando o HTML que é então enviado para o navegador. </p><p>
+O navegador recebe os resultados da execução desse script, mas não sabe qual era o código fonte. </p><p>
+Você pode inclusive configurar seu servidor web para processar todos os seus arquivos HTML com o PHP, e então não há como os usuários dizerem o que você tem na sua manga.
+</p><p>
+A melhor coisa em usar o PHP é que ele é extremamente simples para um iniciante, mas oferece muitos recursos avançados para um programador profissional. 
+Não tenha medo de ler a longa lista de recursos do PHP. Pode entrar com tudo, o mais rápido que puder, e começar a escrever scripts simples em poucas horas.
+</p><p>
+<h3>O que o PHP pode fazer?</h3>
+Qualquer coisa. O PHP é focado principalmente nos scripts do lado do servidor, portanto, você pode fazer qualquer coisa que outro programa CGI pode fazer, como coletar dados de formulários, gerar páginas com conteúdo dinâmico ou enviar e receber cookies. Mas o PHP pode fazer muito mais.
+</p><p>
+Existem três áreas principais onde os scripts PHP são usados:
+</p><p>
+Scripts no lado do servidor (server-side). Este é o mais tradicional e principal campo de atuação do PHP.
+Você precisa de três coisas para isto funcionar: </p><p>
+o interpretador do PHP (CGI ou módulo do servidor), um servidor web e um navegador web. </p><p>
+Você precisa rodar o servidor web conectado a uma instalação do PHP. 
+Você pode acessar os resultados de seu programa PHP com um navegador web, visualizando a página PHP através do servidor web. 
+Tudo isso pode rodar na sua máquina pessoal se você estiver apenas experimentando programar com o PHP. </p><p>
+<h3>Scripts de linha de comando.</h3> 
+</p><p>
+Você pode fazer um script PHP para executá-lo sem um servidor ou navegador. A única coisa necessária é o interpretador PHP. 
+Esse tipo de uso é ideal para script executados usando o cron (Unix, Linux) ou o Agendador de Tarefas (no Windows). 
+Esses scripts podem ser usados também para rotinas de processamento de texto simples. Veja a seção Utilizando o PHP em linha de comando para mais informações.
+Escrever aplicações desktop. 
+</p><p>
+O PHP provavelmente não é a melhor linguagem para criação de aplicações desktop com interfaces gráficas,
+mas se você conhece bem o PHP, e gostaria de usar alguns dos seus recursos avançados nas suas aplicações do lado do cliente, 
+você pode usar o PHP-GTK para escrever programas assim. Você também tem a possibilidade de escrever aplicações multi-plataformas desse jeito. 
+O PHP-GTK é uma extensão do PHP, não disponibilizada na distribuição oficial. 
+</p><p>
+O PHP pode ser utilizado na maioria dos sistemas operacionais, incluindo Linux, várias variantes do Unix (como HP-UX, Solaris e OpenBSD), 
+Microsoft Windows, macOS, RISC OS e provavelmente outros. 
+</p><p>
+    O PHP também tem suporte à maioria dos servidores web atualmente. Isso inclui o Apache, 
+o IIS e muitos outros. E isso inclui qualquer servidor web que possa utilizar o binário FastCGI do PHP, como o lighttpd e o nginx. 
+O PHP trabalha tanto como módulo quanto como um processador CGI.
+</p><p>
+Com o PHP, portanto, você tem liberdade de escolha de sistema operacional e de servidor web. 
+Além disso, você pode escolher entre utilizar programação estruturada ou programação orientada a objeto (OOP), ou ainda uma mistura das duas.
+</p><p>
+Com PHP você não está limitado a gerar somente HTML. </p><p>
+As habilidades do PHP incluem geração de imagens, arquivos PDF e até animações Flash (utilizando libswf e Ming) criados dinamicamente, 
+on the fly. 
+</p><p>
+    Você pode facilmente criar qualquer texto, como XHTML e outros arquivos XML. O PHP pode gerar esses arquivos e salvá-los no sistema de arquivos,
+em vez de mostrá-los em tela, formando um cache no lado do servidor para seu conteúdo dinâmico.
+</p><p>
+Uma das características mais fortes e mais significativas do PHP é seu suporte a uma ampla variedade de banco de dados. 
+Escrever uma página web consultando um banco de dados é incrivelmente simples usando uma das extensões específicas de banco de dados (por exemplo, mysql), 
+ou usando uma camada de abstração como o PDO ou conectar a qualquer banco de dados que suporte o padrão "Open Database Connection" 
+usando a extensão ODBC. Outros bancos de dados podem utilizar cURL ou sockets, como o CouchDB.
+</p><p>
+O PHP também tem suporte para comunicação com outros serviços utilizando protocolos como LDAP, IMAP, SNMP, NNTP, POP3, HTTP, COM (no Windows) 
+e incontáveis outros. Você também pode abrir sockets de rede e interagir diretamente usando qualquer outro protocolo. 
+O PHP também suporta o intercâmbio de dados complexos WDDX, utilizado em virtualmente todas as linguagens de programação para web. 
+Falando de comunicação, o PHP implementa a instanciação de objetos Java e os utiliza transparentemente como objetos PHP.
+</p>
+<script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+      function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+    throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>

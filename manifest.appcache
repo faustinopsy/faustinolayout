@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# 10/01/2022 v1.0
+index.html
+sobre.html
+img/eu.jpg
+include/content.html
+css/fontawesome/css/font-awesome.min.css
+css/style.css
+css/w4.css
+css/w3.css
+js/funcoes.js
+404.html
+contato.html
+
+NETWORK:
+envia.php
+gerais.php
+procurar.php
+psyco.php
+religiao.php
+tecnologia.php
+
+FALLBACK:
+#a primeira URL é o recurso a segunda o substituto
+https://rodrigofaustino.com.br/404.html

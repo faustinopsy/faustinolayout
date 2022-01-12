@@ -28,20 +28,47 @@ includeHTML();
 <table id="myTable" class="searc-content">
 <th></th>
 <?php
-$path = "./blog/";
-$diretorio = dir($path);
+$path1 = "./psicologia/";
+$path2 = "./tech/";
+$path3 = "./teologia/";
+$path4 = "./diversos/";
+$diretorio1 = dir($path1);
+$diretorio2 = dir($path2);
+$diretorio3 = dir($path3);
+$diretorio4 = dir($path4);
 
-while($arquivo = $diretorio -> read()){
+while($arquivo = $diretorio1 -> read()){
 	if(strlen($arquivo)>2){
-		 echo "<tr>";
-		echo "<td>";
-echo "<a href='".$path.$arquivo."'><h3 style='color:white'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</h3></td></a><br />";
-echo "</tr>";
-}
-}
-echo "</table>";
-$diretorio -> close();
+		 
+		
+echo "<tr><td><a href='".$path1.$arquivo."'><p style='color:green'>".strtr($path1,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path1.$arquivo)). "</p></a></td></tr>";
 
+}
+}
+while($arquivo = $diretorio2 -> read()){
+	if(strlen($arquivo)>2){
+		 
+	echo "<tr><td><a href='".$path2.$arquivo."'><p style='color:blue'>".strtr($path2,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path2.$arquivo)). "</p></a></td></tr>";
+}
+}
+while($arquivo = $diretorio3 -> read()){
+	if(strlen($arquivo)>2){
+		
+	echo "<tr><td><a href='".$path3.$arquivo."'><p style='color:gray'>".strtr($path3,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path3.$arquivo)). "</p></a></td></tr>";
+}
+}
+while($arquivo = $diretorio4 -> read()){
+	if(strlen($arquivo)>2){
+		 
+		echo "<tr><td><a href='".$path4.$arquivo."'><p style='color:red'>".strtr($path4,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path4.$arquivo)). "</p></a></td></tr>";
+}
+}
+echo "</td></tr>";
+echo "</table>";
+$diretorio1 -> close();
+$diretorio2 -> close();
+$diretorio3 -> close();
+$diretorio4 -> close();
 ?>
 
 

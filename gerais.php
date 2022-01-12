@@ -36,19 +36,25 @@ includeHTML();
 <table id="myTable" class="searc-content"><br>
 <th></th>
 <?php
-$path = "./diversos/";
-$diretorio = dir($path);
+$path1 = "./diversos/";
 
-while($arquivo = $diretorio -> read()){
+$diretorio1 = dir($path1);
+
+echo "<tr>";
+echo "<td>";
+while($arquivo = $diretorio1 -> read()){
 	if(strlen($arquivo)>2){
-		 echo "<tr>";
-		echo "<td>";
-echo "<a href='".$path.$arquivo."'><h3 style='color:white'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</h3></td></a><br />";
-echo "</tr>";
+		 
+		
+echo "<a href='".$path1.$arquivo."'><p style='color:green'>".strtr($path1,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path1.$arquivo)). "</p></a>";
+
 }
 }
+
+
+echo "</td></tr>";
 echo "</table>";
-$diretorio -> close();
+$diretorio1 -> close();
 
 ?>
 

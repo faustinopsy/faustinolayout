@@ -103,17 +103,7 @@ function darkmode(){
 	}
 }
 
-document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
-      function readingRate(textContainerID) {
-  if (typeof textContainerID !== "string" || textContainerID.length === 0)
-    throw new Error("Parametro 'textContainerID' inválido");
-  let readingRateInSeconds = 0;
-  const textContainer = window.document.getElementById(textContainerID);
-  const content = textContainer.innerText;
-  const wordCount = content.split(" ").length;
-  readingRateInSeconds = (wordCount*60)/200;
-  return readingRateInSeconds;
-}
+
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;

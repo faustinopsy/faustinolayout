@@ -4,11 +4,59 @@
 body {
   background-color: #16202c;
   color: white;
-  
+  font-size:22px;
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-.bg-image {
+.bg-psy {
+  /* The image used */
+  background-image: url("../img/psy.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 150px; 
+  transform: translate(0%, 30%);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-tec {
+  /* The image used */
+  background-image: url("../img/tec.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 150px; 
+  transform: translate(0%, 30%);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-teo {
+  /* The image used */
+  background-image: url("../img/teo.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 150px; 
+  transform: translate(0%, 30%);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-vari {
   /* The image used */
   background-image: url("../img/eu.jpg");
   
@@ -24,7 +72,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+pre code {
+ background-color: rgba(0,0,0, 0.6);
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
 /* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
@@ -54,7 +107,7 @@ body {
   color: white;
 }
 .fa {
-  
+  font-size: 27px;
   cursor: pointer;
   user-select: none;
 }
