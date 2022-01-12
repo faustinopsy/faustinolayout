@@ -41,26 +41,34 @@ while($arquivo = $diretorio1 -> read()){
 	if(strlen($arquivo)>2){
 		 
 		
-echo "<tr><td><a href='".$path1.$arquivo."'><p style='color:green'>".strtr($path1,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path1.$arquivo)). "</p></a></td></tr>";
+echo "<tr><td><div class='card'>
+      <div class='bg-psy'>
+	   </div><div class='bg-text glow'><a href='".$path1.$arquivo."'><p style='color:green'>".strtr(strtr($path1,"/"," "),"."," ")."  </p><p><b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-5),"-"," ")."</b></p><p>". date ("d-m-Y H:i:s.", filemtime($path1.$arquivo)). "</p></a></div></div></td></tr>";
 
 }
 }
 while($arquivo = $diretorio2 -> read()){
 	if(strlen($arquivo)>2){
 		 
-	echo "<tr><td><a href='".$path2.$arquivo."'><p style='color:blue'>".strtr($path2,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path2.$arquivo)). "</p></a></td></tr>";
+	echo "<tr><td><div class='card'>
+      <div class='bg-tec'>
+	   </div><div class='bg-text glow'><a href='".$path2.$arquivo."'><p style='color:green'>".strtr(strtr($path2,"/"," "),"."," ")."  </p><p><b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-5),"-"," ")."</b></p><p>". date ("d-m-Y H:i:s.", filemtime($path2.$arquivo)). "</p></a></div></div></td></tr>";
 }
 }
 while($arquivo = $diretorio3 -> read()){
 	if(strlen($arquivo)>2){
 		
-	echo "<tr><td><a href='".$path3.$arquivo."'><p style='color:gray'>".strtr($path3,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path3.$arquivo)). "</p></a></td></tr>";
+	echo "<tr><td><div class='card'>
+      <div class='bg-teo'>
+	   </div><div class='bg-text glow'><a href='".$path3.$arquivo."'><p style='color:green'>".strtr(strtr($path3,"/"," "),"."," ")."  </p><p><b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-5),"-"," ")."</b></p><p>". date ("d-m-Y H:i:s.", filemtime($path3.$arquivo)). "</p></a></div></div></td></tr>";
 }
 }
 while($arquivo = $diretorio4 -> read()){
 	if(strlen($arquivo)>2){
 		 
-		echo "<tr><td><a href='".$path4.$arquivo."'><p style='color:red'>".strtr($path4,"/"," ")." - <b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-4),"-"," ")."</b>-". date ("d-m-Y H:i:s.", filemtime($path4.$arquivo)). "</p></a></td></tr>";
+		echo "<tr><td><div class='card'>
+      <div class='bg-vari'>
+	   </div><div class='bg-text glow'><a href='".$path4.$arquivo."'><p style='color:green'>".strtr(strtr($path4,"/"," "),"."," ")."  </p><p><b style='color:white;font-size:35px'>".strtr(substr_replace($arquivo,"",-5),"-"," ")."</b></p><p>". date ("d-m-Y H:i:s.", filemtime($path4.$arquivo)). "</p></a></div></div></td></tr>";
 }
 }
 echo "</td></tr>";
