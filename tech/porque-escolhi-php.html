@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/funcoes.js"></script>
+
+
+</head>
+<body>
+<div w3-include-html="../include/contentblog.html"></div> 
+
+
+<script>
+includeHTML();
+</script>
+
+<div class="content" id="content">
+<br> <b id="tempo"></b><br>
+<h3>Porque escolhi PHP</h3>
+PHP é uma linguagem de script de servidor e uma ferramenta poderosa para criar páginas da Web dinâmicas e interativas.
+</p><p>
+Quando finalizei a primeira faculdade em 2010, amei e sai desenvolvendo na linguagem java, queria dizer que java era a melhor linguagem. 
+</p><p>
+Daí quando percebi que para publicar sites baratos encontrie diversos entraves, a maioria dos sites na internet estão em PHP, na faculdade além de java aprendi básicamente o ASP, mas não me aprofundei e vi que ASP também está na maioria dos sites, java esta em um ou outro site e quando vi o desempenho dos tais sites em java desanimei um deles era o site da vivo muito ruim em desempenho.
+</p><p>
+
+Então resolvi aprender essa linguagem desconhecida, porém tinha mais facilidade em se comunicar com os bancos de dados, já que java precisaria configurar os plugins ou pontes para poder acessar bancos de dados, já o PHP era facil demais e ainda o é.
+</p><p>
+<h3>Como aprendi?</h3>
+</p><p>
+Ainda na faculdade eu comprei alguns cursos do professor Neri, professor universitário no Rio Grande do Sul, época onde não existia tantas plataformas de cursos, ele era pioneiro em vender DVD, daí aprendi java com a vídeos aulas do Neri, e aprendi mais ainda quando resolvi fazer engenharia reversa de um dos seus sistemas, a mesma coisa fiz quando iniciei com PHP quando encontrei um framework chamado PHPMAKER, este você configura a conexão com o banco de dados e ele abstrai as tabelas e você configura coisas de forma visual, um framework low code (sem necessidade de programar), quando estudei os códigos gerados pelo PHPMAKER comecei a perceber como as coisas funcionavam, foi quase uma engenharia reversa também, mas não foi pois foi mais facil de fazer do que com o java.
+</p><p>
+<h3>PHP é objetivo</h3>
+</p><p>
+Por não precisar compilar o código, você escreve e sobe para o servidor e o navegador interpreta o código diretamente, então isso faz com que o maximo que você precisa no computador é uma bloco de notas e conhecimento na linguagem para fazer o primeiro programa.
+</p><p>
+Desde 2013 todos os projetos que trabalhei foram criados em PHP, ora quando precisava de uma entrega rápida utilizei o PHPMAKER, mas quando eu precisava ter controle total, fiz com PHP puro sem framework, e quando você faz isso voce aprende muitos pois você enfrenta muitos desafios, atualmente estou usando um paradigma novo pelo menos no PHP que é o de orientação a objetos, e modularidade.
+</p><p>
+</p>
+<script>
+	document.getElementById("tempo").innerText=Math.round(readingRate('content')/60)+' min de leitura';
+      function readingRate(textContainerID) {
+  if (typeof textContainerID !== "string" || textContainerID.length === 0)
+    throw new Error("Parametro 'textContainerID' inválido");
+  let readingRateInSeconds = 0;
+  const textContainer = window.document.getElementById(textContainerID);
+  const content = textContainer.innerText;
+  const wordCount = content.split(" ").length;
+  readingRateInSeconds = (wordCount*60)/200;
+  return readingRateInSeconds;
+}
+    </script>
