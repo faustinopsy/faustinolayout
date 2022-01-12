@@ -14,8 +14,8 @@ Conhecimento básico em php, css, e html.
 
 ### 🔧 Imagens
 
-![API maps](https://github.com/FaustinoPsy/faustinolayout/blob/main/img/tudo.png)
-![API maps](https://github.com/FaustinoPsy/faustinolayout/blob/main/img/blog.png)
+![API maps](https://github.com/FaustinoPsy/faustinolayout/blob/main/img/tudo.PNG)
+![API maps](https://github.com/FaustinoPsy/faustinolayout/blob/main/img/blog.PNG)
 
 ## 📦 Limitações
 
