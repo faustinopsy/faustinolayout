@@ -28,6 +28,10 @@ includeHTML();
 <table id="myTable" class="searc-content">
 <th></th>
 <?php
+
+
+
+
 $path1 = "./psicologia/";
 $path2 = "./tech/";
 $path3 = "./teologia/";
@@ -37,9 +41,11 @@ $diretorio2 = dir($path2);
 $diretorio3 = dir($path3);
 $diretorio4 = dir($path4);
 
+
+
 while($arquivo = $diretorio1 -> read()){
 	if(strlen($arquivo)>2){
-		 
+		
 		
 echo "<tr><td><div class='card'>
       <div class='bg-psy'>
