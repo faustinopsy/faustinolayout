@@ -19,8 +19,7 @@ Conhecimento básico em php, css, e html.
 
 ## 📦 Limitações
 
-Ao ao tratar o nome dos arquivos não vi ainda a possibilidade de deixar acentuação no nome dos arquivos por conta do SEO preferi deixar-los sem acentuação,
-então essa é a limitação para o nome dos artigos que é o mesmo nome dos arquivos.
+Não foi utilizado enhum banco de dados, e sim a leitura em disco, para mostrar a alunos do ensino técnico que nã oprecisa de umanco de dados para um site do tipo blog.
 
 ## 🛠️ melhorias futuras
 
